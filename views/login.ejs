@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="fundo">
+      <h2>Bem-vindo, <%= username %>!</h2>
+      <p>Faça o seu login de acesso</p>
+      <form action="/login" method="post">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Usuário"
+          required
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Senha"
+          required
+        />
+        <i class="fa-solid fa-eye" id="eye-icon"></i>
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+    <script src="/login.js"></script>
+    <script
+      src="https://kit.fontawesome.com/0ad31dba76.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
